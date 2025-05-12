@@ -18,7 +18,7 @@ if fetch_btn:
         "authorization": bearer_token
     }
 
-    for offset in range(0, 10000, 50):
+    for offset in range(10000, 20000, 50):
         url = f"https://api.konfhub.com/attendee-app/event/{event_id}/att-app/attendees"
         params = {
             "limit": 50,
